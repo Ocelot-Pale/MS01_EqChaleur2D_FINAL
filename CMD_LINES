@@ -1,0 +1,7 @@
+g++ main_seq_Jacobi.cpp -o Seq_Jaco && ./Seq_Jaco 
+
+mpicxx main_par_Jacobi.cpp -o main_par_jacobi_4 && mpirun -np 4 main_par_jacobi_4 && python visualize_par_4.py
+
+mpicxx main_par_Jacobi.cpp -o main_par_jacobi_3 && mpirun -np 3 main_par_jacobi_3 && python visualize_par_3.py
+
+mpicxx main_par_Jacobi.cpp -o main_par_jacobi_2 && mpirun -np 2 main_par_jacobi_2 && python visualize_par_2.py
